@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <style>
+    .box {
+      padding: 10px 15px;
+      border: 1px dotted #817676;
+    }
+    .triangle::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-top: 20px solid rgb(235, 23, 23);
+      border-right: 20px solid transparent;
+      border-left: 20px solid transparent;
+    }
+    .triangle {
+      position: relative;
+      width: 0;
+      border-top: 20px solid #817676;
+      border-right: 20px solid transparent;
+      border-left: 20px solid transparent;
+    }
+  </style>
+  <title>深入三角形</title>
+</head>
+<body>
+  <div class="box">
+    <div class="triangle"></div>
+  </div>
+</body>
+</html>
